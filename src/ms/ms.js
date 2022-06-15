@@ -11,8 +11,8 @@ function changeData(id, checked, task) {
   let res = { id: id, done: false, task: task };
 
   for (let i = 0; i < fakeDB.length; i++) {
-    if ((fakeDB[1].id = id)) {
-      fakeDB[1].done = checked;
+    if ((fakeDB[i].id == id)) {
+      fakeDB[i].done = checked;
       res = fakeDB[i];
     }
     return res;

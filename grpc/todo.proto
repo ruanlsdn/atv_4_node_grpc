@@ -9,20 +9,20 @@ service TodoService{
 message Empty{}
 
 message TodoItemId{
- int32 id=1;
- bool checked=2;
+ int32 id = 1;
+ bool checked = 2;
 }
 
 message NewItem{
- string task=1;
+ string task = 1;
 }
 
 message TodoItem{
- int32 id=1;
- bool done=2;
- string task=3;
+ int32 id = 1;
+ bool done = 2;
+ string task = 3;
 }
 
 message TodoList{
- repeated TodoItem todoItem=1;
+ repeated TodoItem todoItem = 1;
 }
