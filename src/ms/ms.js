@@ -1,5 +1,5 @@
 const grpc = require("grpc");
-const todoProto = grpc.load("todo.proto");
+const todoProto = grpc.load("../../grpc/todo.proto");
 const server = new grpc.Server();
 const fakeDB = [
   { id: 1, done: false, task: "Tarefa 01" },

@@ -1,4 +1,5 @@
 syntax="proto3";
+
 service TodoService{
   rpc List(Empty)returns(TodoList){}
   rpc Insert(NewItem)returns(TodoItem){}
@@ -17,7 +18,7 @@ message NewItem{
 }
 
 message TodoItem{
- int32 id1;
+ int32 id=1;
  bool done=2;
  string task=3;
 }
